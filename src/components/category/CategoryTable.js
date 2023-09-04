@@ -33,34 +33,34 @@ const CategoryTable = () => {
   return (
     <>
 
-      <table class="table-auto w-full">
-        <thead class="text-xl text-center font-semibold uppercase text-gray-400 bg-gray-50">
+      <table className="table-auto w-full">
+        <thead className="text-xl text-center font-semibold uppercase text-gray-400 bg-gray-50">
           <tr>
-            <th class="p-2 whitespace-nowrap">
-              <div class="font-semibold text-left">Title</div>
+            <th className="p-2 whitespace-nowrap">
+              <div className="font-semibold text-left">Title</div>
             </th>
-            <th class="p-2 whitespace-nowrap">
-              <div class="font-semibold text-left">Date</div>
+            <th className="p-2 whitespace-nowrap">
+              <div className="font-semibold text-left">Date</div>
             </th>
-            <th class="p-2 whitespace-nowrap">
-              <div class="font-semibold text-left">Video</div>
+            <th className="p-2 whitespace-nowrap">
+              <div className="font-semibold text-left">Video</div>
             </th>
 
           </tr>
         </thead>
-        <tbody class="text-xl divide-y divide-gray-100">
+        <tbody className="text-xl divide-y divide-gray-100">
           {videoData.map((data, index) => (
-            <tr>
-              <td class="p-2 whitespace-nowrap">
-                <div class="flex items-center">
-                  <div class="font-medium text-gray-800">{data.title}</div>
+            <tr key={index}>
+              <td className="p-2 whitespace-nowrap">
+                <div className="flex items-center">
+                  <div className="font-medium text-gray-800">{data.title}</div>
                 </div>
               </td>
-              <td class="p-2 whitespace-nowrap">
-                <div class="text-left">{data.date}</div>
+              <td className="p-2 whitespace-nowrap">
+                <div className="text-left">{data.date}</div>
               </td>
-              <td class="p-2 whitespace-nowrap">
-                <div class="text-left font-medium text-green-500"><Link href={data.video}><PiVideoFill size={25} /></Link></div>
+              <td className="p-2 whitespace-nowrap">
+                <div className="text-left font-medium text-green-500"><Link href={data.video}><PiVideoFill size={25} /></Link></div>
               </td>
 
             </tr>
