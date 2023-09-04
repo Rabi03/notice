@@ -94,7 +94,7 @@ const SubCategoryTable = () => {
         </thead>
         <tbody className="text-xl divide-y divide-gray-100">
           {fileData.map((data, index) => (
-            <tr>
+            <tr key={index}>
               <td className="p-2 whitespace-nowrap">
                 <div className="flex items-center">
                   <div className="font-medium text-gray-800">{data.title}</div>

@@ -1,6 +1,7 @@
 import React from "react";
 import signIn from "@/firebase/auth/signin";
 import { useRouter } from 'next/navigation'
+import Link from "next/link";
 
 function SignIn() {
     const [email, setEmail] = React.useState('')
@@ -49,9 +50,9 @@ function SignIn() {
 
                         <div className="text-grey-dark mt-6">
                             Do not have  account?
-                            <a className="no-underline border-b border-blue text-blue" href="/signup">
+                            <Link className="no-underline border-b border-blue text-blue" href="/signup">
                                 Register
-                            </a>.
+                            </Link>.
                         </div>
                     </div>
                 </div>
